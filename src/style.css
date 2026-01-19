@@ -1,0 +1,167 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.tw-navbar {
+  background: #ff5722;
+  color: #fff;
+  min-height: 80px;
+}
+
+.tw-navbar-actions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.tw-nav-btn {
+  pointer-events: auto;
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #fff;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tw-nav-btn .bi {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.tw-nav-btn.btn-lg {
+  width: 60px;
+  height: 60px;
+}
+
+.tw-nav-btn.btn-lg .bi {
+  font-size: 28px;
+}
+
+.tw-navbar-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tw-navbar-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.tw-option-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 18px 12px;
+  min-height: 140px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.tw-option-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.tw-option-card:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tw-option-card:focus-visible {
+  outline: 3px solid rgba(255, 87, 34, 0.35);
+  outline-offset: 2px;
+}
+
+.tw-icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  background: #ffe0b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.tw-page-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tw-dish-zh {
+  line-height: 1.2;
+}
+
+.tw-say-tw {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.tw-say-tw ruby {
+  ruby-position: over;
+}
+
+.tw-say-tw rt {
+  font-size: 11px;
+  color: #666;
+}
+
+.tw-back-btn {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.tw-back-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.tw-nt-price {
+  color: #ff5722;
+}
+
+/* Bootstrap btn-primary override for TabeWan primary actions */
+.btn.btn-primary.tw-btn-primary {
+  background: #ff5722;
+  border-color: #ff5722;
+}
+
+.btn.btn-primary.tw-btn-primary:hover {
+  background: #f4511e;
+  border-color: #f4511e;
+}
+
+.btn.btn-primary.tw-btn-primary:active,
+.btn.btn-primary.tw-btn-primary.active {
+  background: #e64a19;
+  border-color: #e64a19;
+}
+
+.btn.btn-primary.tw-btn-primary:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.35);
+}
