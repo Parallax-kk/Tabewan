@@ -10,7 +10,6 @@ type OrderItem = {
     kana: string
     pinyin: string
     priceNt: number
-    audioKey: string
     count: number
 }
 

@@ -6,5 +6,4 @@ export type Shop = {
     kana: string
     pinyin: string
     priceNt: number
-    audioKey: string
 }

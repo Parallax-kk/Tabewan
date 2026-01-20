@@ -72,10 +72,9 @@ export async function getShops(): Promise<Shop[]> {
             const kana = (row['読み(カナ)'] || '').trim()
             const pinyin = (row['ピンイン'] || '').trim()
             const priceNt = toNumber(row['値段(NT$)'])
-            const audioKey = (row['音声キー'] || '').trim()
 
             if (!category || !shopName || !dishNameZh || !dishNameJa ||
-                !kana || !pinyin || !priceNt || !audioKey)
+                !kana || !pinyin || !priceNt)
                 return null
 
             return {
@@ -86,7 +85,6 @@ export async function getShops(): Promise<Shop[]> {
                 kana,
                 pinyin,
                 priceNt,
-                audioKey,
             }
         })
         .filter((x): x is Shop => x !== null)

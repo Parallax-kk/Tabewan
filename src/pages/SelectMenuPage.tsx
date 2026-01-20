@@ -12,7 +12,6 @@ type Dish = {
     kana: string
     pinyin: string
     priceNt: number
-    audioKey: string
 }
 
 type OrderItem = {
@@ -22,7 +21,6 @@ type OrderItem = {
     kana: string
     pinyin: string
     priceNt: number
-    audioKey: string
     count: number
 }
 
@@ -120,7 +118,6 @@ export default function SelectMenuPage() {
                 kana: row.kana,
                 pinyin: row.pinyin,
                 priceNt: row.priceNt,
-                audioKey: row.audioKey,
             })
         }
 
@@ -155,7 +152,6 @@ export default function SelectMenuPage() {
                     kana: dish.kana,
                     pinyin: dish.pinyin,
                     priceNt: dish.priceNt,
-                    audioKey: dish.audioKey,
                     count,
                 }
             })
